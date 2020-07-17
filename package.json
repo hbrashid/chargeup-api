@@ -12,10 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run build"
+    "start": "./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
