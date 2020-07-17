@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "chargeup-api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon ./app.js"
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC"
