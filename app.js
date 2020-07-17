@@ -4,15 +4,16 @@ const db = require('./mysql');
 const queries = require('./queries');
 const bodyParser = require('body-parser');
 const cors = require("cors");
-const port = 10240;
+const port = process.env.PORT || 10240;
 
 app.use(bodyParser.json());
 
-app.listen(port, () => { console.log(`APPLICATION STARTED ON PORT ${port}`) });
 
 app.get('/', (req, res) => {
     res.send('Welcome to our server!')
-  })
+})
+
+app.listen(port, () => { console.log(`APPLICATION STARTED ON PORT ${port}`) });
 
 app.use(cors());
 
