@@ -13,6 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start:dev": "nodemon ./app.js",
+    "start": "NODE_ENV=production node app.js"
     
   },
   "author": "",
