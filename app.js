@@ -85,6 +85,7 @@ app.post('/weather/save', (req, res) => {
         let sun = req.body.sun;
         let water = req.body.water;
         let progress = req.body.progress;
+        console.log(req.body)
 
         db.run(queries.Save(userId, sun, water, progress),
             (message) => {
