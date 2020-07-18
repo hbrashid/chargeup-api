@@ -13,8 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "serve -s build",
-    "heroku-postbuild": "npm run build"
+    
   },
   "author": "",
   "license": "ISC"
